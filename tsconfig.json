@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "allowUnusedLabels": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es2017",
+    "removeComments": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "jsx": "react",
+    "lib": [
+      "es2017"
+    ],
+
+    "baseUrl": "./src",
+
+    "paths": {
+      "*": [
+        "*"
+      ]
+    },
+
+    "outDir": "dist"
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  "include": [
+    "src/**/*",
+    "__tests__/**/*"
+  ],
+
+  "exclude": [
+    "build"
+  ]
+}

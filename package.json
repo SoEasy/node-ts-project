@@ -1,0 +1,33 @@
+{
+  "name": "node-ts-project",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.15.3"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:watch": "nodemon",
+    "build": "rm -rf dist && tsc",
+    "lint": "tslint --project ."
+  },
+  "author": "Vladimir Sannikov",
+  "license": "MIT",
+  "nodemonConfig": {
+    "watch": ["src/"],
+    "ext": "ts",
+    "ignore": [".git", "node_modules"],
+    "exec": "npm start"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "12.0.2",
+    "nodemon": "1.19.0",
+    "tslib": "1.9.3",
+    "tslint": "5.16.0",
+    "tslint-eslint-rules": "5.4.0",
+    "ts-node": "8.1.0",
+    "typescript": "3.4.5"
+  }
+}
