@@ -1,3 +1,4 @@
+import { Controller } from 'app/controller';
 import { Server } from './server';
 
 function foo(): void {
@@ -8,7 +9,8 @@ console.log(foo.toString());
 foo();
 
 function decorate(target) {
-  console.log('decorate class')
+  console.log('decorate class');
+  const controller: Controller = new Controller();
 }
 
 @decorate
