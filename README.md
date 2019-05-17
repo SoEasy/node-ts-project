@@ -7,6 +7,7 @@ Boilerplate project for running, building and WebStorm-compatible running/debugg
 - **CLI run without restart** - ts-node binary thru tsconfig-paths pipe
 - **CLI watching** - nodemon
 - **WebStorm watching** - ts-node usage over js file
+- **Testing** - jest. If you want to debug your tests - use WebStorm >= 2019.3.6
 
 ## Commands (npm run)
 - **build** - build an application for production usage
