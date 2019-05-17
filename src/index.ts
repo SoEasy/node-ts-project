@@ -1,19 +1,11 @@
-import { Controller } from 'app/controller';
-import { Server } from './server';
+import express from 'express';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
 
-function foo(): void {
-  console.log([1, 2, 3, 3, 4].includes(3));
-  Server.send();
-}
-console.log(foo.toString());
-foo();
+const app = express();
 
-function decorate(target) {
-  console.log('decorate class');
-  const controller: Controller = new Controller();
-}
+app.use(cookieParser());
+app.use(bodyParser.json());
 
-@decorate
-class B {
-
-}
+app.listen(3000);
+console.log('Service started on port 3000');
