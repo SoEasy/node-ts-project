@@ -23,18 +23,7 @@ module.exports = {
   },
 
   optimization: {
-    minimize: false,
-
-    splitChunks: {
-      chunks: 'all',
-      cacheGroups: {
-        vendors: {
-          name: 'vendors',
-          filename: '[name].[contenthash:8].js',
-          test: /[\\/]node_modules[\\/]/
-        }
-      }
-    }
+    minimize: false
   },
 
   module: {
