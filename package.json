@@ -4,22 +4,26 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": ">=10.15.3"
+    "node": ">=10.13.0"
   },
   "scripts": {
     "start": "ts-node -r tsconfig-paths/register src/index.ts",
     "start:watch": "nodemon --config nodemon-cli.json",
     "build": "rm -rf dist && webpack",
     "build:watch": "webpack --watch",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "test": "jest"
   },
   "author": "Vladimir Sannikov",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "24.0.13",
     "@types/node": "12.0.2",
     "awesome-typescript-loader": "5.2.1",
+    "jest": "24.8.0",
     "nodemon": "1.19.0",
+    "ts-jest": "24.0.2",
     "ts-node": "8.1.0",
     "tsconfig-paths": "3.8.0",
     "tslib": "1.9.3",
